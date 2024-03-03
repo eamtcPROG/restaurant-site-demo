@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <img src="images/mascot.png" alt="Mascot" class="mascot"/>
+    <div class="mascot-container">
+      <img src="images/mascot.png" alt="Mascot" class="mascot" />
+      <div class="mascot-message">Welcome!</div>
+    </div>
+
     <div class="container">
       <div class="header">
         <div class="header-mobile">
@@ -250,6 +254,33 @@
             menu.classList.add("show");
           }
         });
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const mascotContainer = document.querySelector(".mascot-container");
+        // Define the cycle time and disappear time
+        const cycleTime = 20000; // 20 seconds for each cycle as defined in CSS
+        const disappearTime = 10000; // 10 seconds of disappearance
+
+        function manageMascotVisibility() {
+          // Show the mascot at the beginning of each cycle
+          mascotContainer.style.display = "flex";
+
+          // Hide the mascot after the cycle completes and before the next cycle starts
+          setTimeout(() => {
+            mascotContainer.style.display = "none";
+
+            // Schedule the mascot to reappear for the next cycle
+            setTimeout(() => {
+              mascotContainer.style.display = "flex";
+            }, disappearTime);
+          }, cycleTime - disappearTime);
+        }
+
+        // Start the visibility management cycle
+        manageMascotVisibility();
+        // Continue managing visibility at the end of each full cycle (cycle + disappear time)
+        setInterval(manageMascotVisibility, cycleTime + disappearTime);
       });
     </script>
   </body>

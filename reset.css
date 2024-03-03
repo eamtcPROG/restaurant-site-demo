@@ -636,12 +636,39 @@ body {
   }
 }
 
-.mascot {
+.mascot-container {
   position: fixed;
-  width: 100px; /* Adjust based on your image size */
-  height: auto;
-  z-index: 1000; /* Ensures it's above other content */
-  animation: moveAround 30s infinite; /* Adjust time as needed */
+  width: 100px; /* Adjust size as needed */
+
+  display: none; /* Start hidden and will be displayed after a delay */
+  justify-content: center;
+  align-items: center;
+  animation: moveAround 20s infinite;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.mascot-message {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px 10px;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: nowrap;
+  transition: opacity 0.5s ease; /* Smooth transition for visibility */
+}
+
+.mascot-container:hover .mascot-message {
+  display: block;
+  opacity: 1; /* Ensure it's fully visible */
+}
+
+.mascot {
+  width: 100%; /* Ensure it fills the container */
 }
 
 @keyframes moveAround {
@@ -649,43 +676,36 @@ body {
   100% {
     top: 0;
     left: 0;
-    opacity: 0; /* Mascot is fully visible at the start and end */
   }
   5% {
     top: 0;
-    left: 25%; /* Move to the middle of the right edge */
-    opacity: 0.3;
+    left: 25%;
   }
   10% {
     top: 70%;
-    left: 35%; /* Move to the middle of the right edge */
-    opacity: 0.5;
+    left: 35%;
   }
   20% {
     top: 0;
-    left: 50%; /* Move to the middle of the right edge */
-    opacity: 0; /* Ensure mascot is visible while moving */
+    left: 50%;
   }
   40% {
     top: 50%;
-    left: calc(100% - 100px); /* Move diagonally to the bottom right corner */
-    opacity: 1;
+    left: calc(100% - 100px);
   }
   60% {
     top: calc(100% - 100px);
-    left: 50%; /* Move to the middle of the left edge */
-    opacity: 1;
+    left: 50%;
   }
   80% {
     top: 50%;
-    left: 80%; /* Move diagonally to the top left corner */
-    opacity: 1;
+    left: 80%;
   }
   90% {
-    opacity: 0.4; /* Start fading out */
     top: 40%;
   }
-  95% {
-    opacity: 0; /* Mascot is fully invisible */
-  }
+}
+
+.mascot-container:hover {
+  animation-play-state: paused; /* Optional: Pause the animation on hover */
 }
