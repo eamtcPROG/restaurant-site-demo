@@ -635,3 +635,57 @@ body {
     margin-top: 1%;
   }
 }
+
+.mascot {
+  position: fixed;
+  width: 100px; /* Adjust based on your image size */
+  height: auto;
+  z-index: 1000; /* Ensures it's above other content */
+  animation: moveAround 30s infinite; /* Adjust time as needed */
+}
+
+@keyframes moveAround {
+  0%,
+  100% {
+    top: 0;
+    left: 0;
+    opacity: 0; /* Mascot is fully visible at the start and end */
+  }
+  5% {
+    top: 0;
+    left: 25%; /* Move to the middle of the right edge */
+    opacity: 0.3;
+  }
+  10% {
+    top: 70%;
+    left: 35%; /* Move to the middle of the right edge */
+    opacity: 0.5;
+  }
+  20% {
+    top: 0;
+    left: 50%; /* Move to the middle of the right edge */
+    opacity: 0; /* Ensure mascot is visible while moving */
+  }
+  40% {
+    top: 50%;
+    left: calc(100% - 100px); /* Move diagonally to the bottom right corner */
+    opacity: 1;
+  }
+  60% {
+    top: calc(100% - 100px);
+    left: 50%; /* Move to the middle of the left edge */
+    opacity: 1;
+  }
+  80% {
+    top: 50%;
+    left: 80%; /* Move diagonally to the top left corner */
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.4; /* Start fading out */
+    top: 40%;
+  }
+  95% {
+    opacity: 0; /* Mascot is fully invisible */
+  }
+}
