@@ -28,7 +28,6 @@ body {
   box-shadow: -2px 23px 26px -6px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: -2px 23px 26px -6px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: -2px 23px 26px -6px rgba(0, 0, 0, 0.2);
-  
 }
 
 .menu {
@@ -36,7 +35,6 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  
 }
 
 .menu ul {
@@ -48,17 +46,25 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  
 }
 
 .phone {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
+  background-color: #ffe145;
+  /* padding: 5px; */
+  border-radius: 10px;
 }
 
-.phone a{
+.phone:hover {
+  background-color: #f29221;
+}
+.phone a:hover {
+  color: #1b2e6a !important;
+}
+.phone a {
   margin-left: 5px;
 }
 
@@ -74,7 +80,6 @@ body {
   align-items: center;
   width: 100%;
   height: 100%;
-  
 }
 .hero-link {
   padding: 2% 5% 2% 5%;
@@ -98,7 +103,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
 
 .show_bt {
@@ -143,7 +147,6 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  
 }
 
 .suggestion-block ul li {
@@ -152,7 +155,6 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  
 }
 
 .suggestion-block ul li div {
@@ -183,7 +185,6 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  
 }
 
 .hero-block div img {
@@ -191,7 +192,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  
 }
 
 .hero-text {
@@ -201,7 +201,6 @@ body {
   align-items: center;
   margin-top: 5%;
   margin-left: 5%;
-  
 }
 
 .hero-text h2 {
@@ -232,7 +231,6 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  
 }
 
 .product-block ul li {
@@ -246,7 +244,6 @@ body {
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  
 }
 .product-block ul li div {
   width: 100%;
@@ -288,7 +285,6 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  
 }
 
 .category-block ul li {
@@ -302,7 +298,6 @@ body {
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  
 }
 .category-block ul li div {
   width: 100%;
@@ -311,7 +306,6 @@ body {
   align-content: center;
   justify-content: center;
   align-items: center;
-  
 }
 
 .category-block ul li div p {
@@ -337,7 +331,7 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-top: 2%;
-  
+
   background-color: #2a5aa270;
   width: 100%;
   height: 100%;
@@ -354,7 +348,6 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  
 }
 
 .newsletter-block .content .block .text {
@@ -367,7 +360,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  
 }
 
 .newsletter-block .content .block .form form {
@@ -406,7 +398,6 @@ body {
   font-weight: 500;
 }
 
-
 .gallery {
   width: 100%;
 }
@@ -436,13 +427,12 @@ body {
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  
 }
 .gallery ul li div {
   width: 100%;
 }
 
-.gallery ul li div img{
+.gallery ul li div img {
   width: 100%;
 }
 
@@ -456,4 +446,192 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  /* Styles for screens smaller than 768px */
+  .hero-block {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-block div img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-text {
+    margin-top: 1%;
+    justify-content: center;
+  }
+
+  .hero-text h2 {
+    font-size: 40px;
+  }
+
+  .hero-link-block {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 !important;
+  }
+
+  .hero-link {
+    margin: 1% 0 1% 0;
+  }
+
+  .hero-link {
+    display: block;
+    width: 100%;
+  }
+
+  .suggestion-block {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .suggestion-block ul {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .suggestion-block ul li {
+    width: 100%;
+    justify-content: flex-start;
+    margin-left: 30%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+
+  .product-block ul {
+    flex-direction: column;
+  }
+  .product-title {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .show_bt {
+    width: 75%;
+  }
+  .product-block ul li {
+    width: 75%;
+  }
+
+  .category-block ul {
+    flex-direction: column;
+  }
+
+  .category-block ul li {
+    width: 50%;
+  }
+
+  .gallery ul {
+    flex-direction: column;
+  }
+
+  .gallery ul li {
+    width: 50%;
+  }
+
+  .footer .content {
+    flex-direction: column;
+  }
+
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /* Style for menu when it's open */
+  .menu ul.show {
+    display: flex;
+  }
+
+  /* Additional mobile styles for menu items */
+  .menu li {
+    text-align: center;
+  }
+
+  /* Style for the toggle button */
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    user-select: none;
+    position: absolute;
+    left: 20px;
+  }
+  .header-mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  /* .phone a {
+    margin-left: 5px;
+  } */
+}
+
+@media (min-width: 769px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+@media (max-width: 1300px) {
+  .newsletter-block .content .block {
+    flex-direction: column;
+  }
+
+  .newsletter-block .content .block .text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .newsletter-block .content .block .form {
+    width: 100%;
+    margin-top: 2%;
+  }
+
+  .newsletter-block .content .block .form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .newsletter-block .content .block .form input {
+    width: 100%;
+    padding: 3% 0 3% 0 !important;
+    text-align: center;
+  }
+
+  .newsletter-block .content .block .form button {
+    width: 100%;
+    margin-top: 1%;
+  }
 }
