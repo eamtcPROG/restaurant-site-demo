@@ -464,7 +464,7 @@ body {
   }
 
   .hero-text {
-    margin-top: 1%;
+    margin: 1%;
     justify-content: center;
   }
 
@@ -511,10 +511,12 @@ body {
 
   .suggestion-block ul li {
     width: 100%;
-    justify-content: flex-start;
-    margin-left: 30%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 1%;
     margin-bottom: 1%;
+    text-align: center;
   }
 
   .product-block ul {
