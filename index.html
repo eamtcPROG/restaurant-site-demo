@@ -4,6 +4,12 @@
     <title>Restaurant</title>
     <link rel="stylesheet" type="text/css" href="reset.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <div class="mascot-container">
@@ -11,7 +17,7 @@
       <div class="mascot-message">Welcome!</div>
     </div>
 
-    <div class="container">
+    <div class="my-container">
       <div class="header">
         <div class="header-mobile">
           <div class="menu-toggle">&#9776;</div>
@@ -94,7 +100,7 @@
           </ul>
         </div>
 
-        <div class="product-block" id="top-rated">
+        <!-- <div class="product-block" id="top-rated">
           <div class="product-title">
             <h2>Top rated dishes</h2>
             <a class="show_bt" href="#">Show all</a>
@@ -133,7 +139,8 @@
               </div>
             </li>
           </ul>
-        </div>
+        </div> -->
+
         <div class="category-block" id="categories">
           <div class="product-title">
             <h2>Categories</h2>
@@ -187,6 +194,75 @@
           </ul>
         </div>
       </div>
+      <div class="container text-center px-4" id="top-rated">
+        <div class="row justify-content-between">
+          <div class="col-md-6">
+            <h2>Top rated dishes</h2>
+          </div>
+          <div class="col-md-6">
+            <a class="show_bt" href="#">Show all</a>
+          </div>
+        </div>
+        <div class="row row-cols-1 g-2 mt-2">
+          <div class="col-md-3 col-sm-12">
+            <div class="card shadow" style="width: 100%; height: 100%;">
+              <img
+                src="images/product1.png"
+                class="card-img-top"
+                alt="product1"
+                width="100%"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pork burger</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-12">
+            <div class="card shadow" style="width: 100%; height: 100%;">
+              <img
+                src="images/product2.png"
+                class="card-img-top"
+                alt="product2"
+                width="100%"
+              />
+              <div class="card-body">
+                <h5 class="card-title
+                ">Risotto with stewed rib</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-12">
+            <div class="card shadow" style="width: 100%; height: 100%;">
+              <img
+                src="images/product3.png"
+                class="card-img-top"
+                alt="product3"
+                width="100%"
+              />
+              <div class="card-body">
+                <h5 class="card-title
+                ">Salad with slightly salmon</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-12">
+            <div class="card shadow" style="width: 100%; height: 100%;">
+              <img
+                src="images/product4.png"
+                class="card-img-top"
+                alt="product4"
+                width="100%"
+              />
+              <div class="card-body">
+                <h5 class="card-title
+                ">Banh xeo</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
       <div class="newsletter-block" id="newsletter">
         <div class="content">
           <div class="block">
@@ -283,5 +359,10 @@
         setInterval(manageMascotVisibility, cycleTime + disappearTime);
       });
     </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
