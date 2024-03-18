@@ -209,36 +209,6 @@ body {
   font-weight: 500;
 }
 
-.product-block {
-  margin-top: 3%;
-  margin-bottom: 3%;
-  width: 100%;
-}
-
-.product-block h2 {
-  color: #1b2e6a;
-  font-size: 40px;
-  font-weight: 500;
-}
-
-.product-block ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-
-.product-block-2 h2 {
-  color: #1b2e6a;
-  font-size: 40px;
-  font-weight: 500;
-}
 
 .my-title {
   color: #1b2e6a;
@@ -261,43 +231,6 @@ body {
   text-align: right;
 }
 
-.product-block-2 ul {
-  list-style-type: none;
-  
-  overflow: hidden;
-  
-}
-
-.product-block ul li {
-  margin: 20px;
-  width: 20%;
-  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.1);
-  background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-}
-.product-block ul li div {
-  width: 100%;
-}
-
-.product-block ul li div p {
-  text-align: center;
-  font-size: 20px;
-  font-weight: 500;
-  color: #f29221;
-}
-
-.product-block ul li div p:hover {
-  color: #1b2e6a;
-}
-
-.product-block ul li div img {
-  width: 100%;
-}
 
 .category-block {
   margin-top: 3%;
@@ -433,43 +366,8 @@ body {
   font-weight: 500;
 }
 
-.gallery {
-  width: 100%;
-}
 
-.gallery h2 {
-  color: #1b2e6a;
-  font-size: 40px;
-  font-weight: 500;
-}
 
-.gallery ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-.gallery ul li {
-  margin: 20px;
-  width: 25%;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-}
-.gallery ul li div {
-  width: 100%;
-}
-
-.gallery ul li div img {
-  width: 100%;
-}
 
 .footer {
   background-color: #1b2e6a;
@@ -564,9 +462,7 @@ body {
     margin: 0;
   }
 
-  .product-block ul {
-    flex-direction: column;
-  }
+  
   .product-title {
     flex-direction: column;
     justify-content: center;
@@ -575,9 +471,7 @@ body {
   .show_bt {
     width: 75%;
   }
-  .product-block ul li {
-    width: 75%;
-  }
+  
 
   .category-block ul {
     flex-direction: column;
@@ -587,13 +481,7 @@ body {
     width: 50%;
   }
 
-  .gallery ul {
-    flex-direction: column;
-  }
-
-  .gallery ul li {
-    width: 50%;
-  }
+  
 
   .footer .content {
     flex-direction: column;
